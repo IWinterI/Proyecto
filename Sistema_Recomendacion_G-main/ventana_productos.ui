@@ -1,0 +1,706 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Ventana_Productos</class>
+ <widget class="QMainWindow" name="Ventana_Productos">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>800</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Productos</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">#Capa0{
+	background-color: rgb(85, 255, 255);
+}
+
+#Capa1{
+	border-radius: 10px;
+	background-color: rgb(255, 255, 255);
+}
+
+#Capa2{
+	background-color: rgb(85, 255, 255);
+	border-radius: 10px;
+}
+
+#Volver{
+	border: 2px solid rgb(65, 195, 195);
+	border-top-left-radius: 10px;
+	border-bottom-left-radius: 10px;
+	background-color: rgb(255, 255, 255);
+}
+
+#Volver:hover{
+	
+	background-color: rgb(169, 255, 242);
+}
+
+#pushButton{
+	border: 2px solid rgb(65, 195, 195);
+	border-radius:10px;
+	background-color: rgb(255, 255, 255);
+}
+
+#pushButton:hover{
+	background-color: rgb(169, 255, 242);
+}
+
+
+
+#frame{
+	border:1px solid #42c7c7;
+	border-radius:10px;
+	background-color: rgb(255, 255, 255);
+}
+
+#lineEdit{
+	border-top: 1px solid #42c7c7;
+	border-right: 1px solid #42c7c7;
+	border-bottom: 1px solid #42c7c7;
+}
+
+QListWidget{
+	background-color: #f8f8f8;
+}
+
+QListWidget::item { 
+	border-bottom: 1px solid #e0e0e0;
+	padding: 8px; 
+}
+
+QListWidget::item:selected { 
+	background-color: #e0f0ff; 
+}</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QWidget" name="Capa0" native="true">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>801</width>
+      <height>101</height>
+     </rect>
+    </property>
+    <widget class="QLabel" name="label">
+     <property name="geometry">
+      <rect>
+       <x>240</x>
+       <y>20</y>
+       <width>311</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Arial</family>
+       <pointsize>14</pointsize>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="text">
+      <string>Bienvenido a MaxiStore</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignmentFlag::AlignCenter</set>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="Volver">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>10</y>
+       <width>91</width>
+       <height>24</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Cerrar Sesion</string>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QWidget" name="Capa1" native="true">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>70</y>
+      <width>801</width>
+      <height>481</height>
+     </rect>
+    </property>
+    <widget class="QTabWidget" name="Carpeta">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>50</y>
+       <width>371</width>
+       <height>421</height>
+      </rect>
+     </property>
+     <property name="currentIndex">
+      <number>0</number>
+     </property>
+     <widget class="QWidget" name="Productos">
+      <attribute name="title">
+       <string>Productos</string>
+      </attribute>
+      <widget class="QScrollArea" name="scrollArea">
+       <property name="geometry">
+        <rect>
+         <x>-10</x>
+         <y>-10</y>
+         <width>381</width>
+         <height>411</height>
+        </rect>
+       </property>
+       <property name="widgetResizable">
+        <bool>true</bool>
+       </property>
+       <widget class="QWidget" name="scrollAreaWidgetContents">
+        <property name="geometry">
+         <rect>
+          <x>0</x>
+          <y>0</y>
+          <width>379</width>
+          <height>409</height>
+         </rect>
+        </property>
+        <widget class="QListWidget" name="listWidget_3">
+         <property name="geometry">
+          <rect>
+           <x>10</x>
+           <y>10</y>
+           <width>361</width>
+           <height>391</height>
+          </rect>
+         </property>
+        </widget>
+       </widget>
+      </widget>
+     </widget>
+     <widget class="QWidget" name="Recomendado">
+      <attribute name="title">
+       <string>Recomendados</string>
+      </attribute>
+      <widget class="QScrollArea" name="scrollArea_2">
+       <property name="geometry">
+        <rect>
+         <x>-10</x>
+         <y>-10</y>
+         <width>381</width>
+         <height>411</height>
+        </rect>
+       </property>
+       <property name="widgetResizable">
+        <bool>true</bool>
+       </property>
+       <widget class="QWidget" name="scrollAreaWidgetContents_2">
+        <property name="geometry">
+         <rect>
+          <x>0</x>
+          <y>0</y>
+          <width>379</width>
+          <height>409</height>
+         </rect>
+        </property>
+        <widget class="QListWidget" name="listWidget">
+         <property name="geometry">
+          <rect>
+           <x>10</x>
+           <y>10</y>
+           <width>361</width>
+           <height>391</height>
+          </rect>
+         </property>
+        </widget>
+       </widget>
+      </widget>
+     </widget>
+    </widget>
+    <widget class="QListWidget" name="listWidget_2">
+     <property name="geometry">
+      <rect>
+       <x>435</x>
+       <y>181</y>
+       <width>341</width>
+       <height>285</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QWidget" name="Capa2" native="true">
+     <property name="geometry">
+      <rect>
+       <x>440</x>
+       <y>70</y>
+       <width>331</width>
+       <height>141</height>
+      </rect>
+     </property>
+     <widget class="QLineEdit" name="lineEdit">
+      <property name="geometry">
+       <rect>
+        <x>70</x>
+        <y>10</y>
+        <width>113</width>
+        <height>21</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QComboBox" name="comboBox">
+      <property name="geometry">
+       <rect>
+        <x>190</x>
+        <y>10</y>
+        <width>111</width>
+        <height>22</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Arial</family>
+        <bold>false</bold>
+       </font>
+      </property>
+      <property name="currentText">
+       <string/>
+      </property>
+      <property name="placeholderText">
+       <string>Categorias</string>
+      </property>
+      <item>
+       <property name="text">
+        <string>Categorias </string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Ropa de mujer</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Ropa de hombre</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Ropa de niño</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Calzado</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Maquillaje rostro</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Maquillaje ojos/labios</string>
+       </property>
+      </item>
+     </widget>
+     <widget class="QComboBox" name="comboBox_2">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>40</y>
+        <width>100</width>
+        <height>22</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Arial</family>
+        <bold>false</bold>
+       </font>
+      </property>
+      <property name="placeholderText">
+       <string>Marca</string>
+      </property>
+      <item>
+       <property name="text">
+        <string>Marca</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Zara</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Nike</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Maybelline</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Lebi's</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>H&amp;M</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>L'Oréal</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Adidas</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>MAC</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Gap</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Revlon</string>
+       </property>
+      </item>
+     </widget>
+     <widget class="QComboBox" name="comboBox_3">
+      <property name="geometry">
+       <rect>
+        <x>120</x>
+        <y>40</y>
+        <width>91</width>
+        <height>22</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Arial</family>
+       </font>
+      </property>
+      <property name="placeholderText">
+       <string>Precio min</string>
+      </property>
+      <item>
+       <property name="text">
+        <string>Precio min</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>10$</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>20$</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>30$</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>40$</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>50$</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>60$</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>70$</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>80$</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>90$</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>100$</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>110$</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>120$</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>130$</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>140$</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>150$</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>160$</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>170$</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>180$</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>190$</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>200$</string>
+       </property>
+      </item>
+     </widget>
+     <widget class="QPushButton" name="pushButton">
+      <property name="geometry">
+       <rect>
+        <x>110</x>
+        <y>80</y>
+        <width>91</width>
+        <height>24</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Aplicar Filtros</string>
+      </property>
+     </widget>
+     <widget class="QComboBox" name="comboBox_4">
+      <property name="geometry">
+       <rect>
+        <x>220</x>
+        <y>40</y>
+        <width>91</width>
+        <height>22</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Arial</family>
+       </font>
+      </property>
+      <property name="placeholderText">
+       <string>Precio Max</string>
+      </property>
+      <item>
+       <property name="text">
+        <string>Precio Max</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>10$</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>20$</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>30$</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>40$</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>50$</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>60$</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>70$</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>80$</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>90$</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>100$</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>110$</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>120$</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>130$</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>140$</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>150$</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>160$</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>170$</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>180$</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>190$</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>200$</string>
+       </property>
+      </item>
+     </widget>
+     <widget class="QFrame" name="frame">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>10</y>
+        <width>81</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::Shape::StyledPanel</enum>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Shadow::Raised</enum>
+      </property>
+      <widget class="QLabel" name="label_2">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>0</y>
+         <width>51</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>Arial</family>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="text">
+        <string>Buscar:</string>
+       </property>
+      </widget>
+     </widget>
+     <zorder>frame</zorder>
+     <zorder>lineEdit</zorder>
+     <zorder>comboBox</zorder>
+     <zorder>comboBox_2</zorder>
+     <zorder>comboBox_3</zorder>
+     <zorder>pushButton</zorder>
+     <zorder>comboBox_4</zorder>
+    </widget>
+    <zorder>Capa2</zorder>
+    <zorder>Carpeta</zorder>
+    <zorder>listWidget_2</zorder>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>800</width>
+     <height>22</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
