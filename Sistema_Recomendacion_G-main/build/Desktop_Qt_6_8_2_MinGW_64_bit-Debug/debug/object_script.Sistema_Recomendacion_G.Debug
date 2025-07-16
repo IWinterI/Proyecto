@@ -1,0 +1,14 @@
+debug/catalogo.o
+debug/main.o
+debug/mainwindow.o
+debug/productodialog.o
+debug/recomendacion.o
+debug/registro_usuario.o
+debug/usuario.o
+debug/utilidades.o
+debug/ventana_productos.o
+debug/qrc_Recursos.o
+debug/moc_mainwindow.o
+debug/moc_productodialog.o
+debug/moc_registro_usuario.o
+debug/moc_ventana_productos.o

@@ -1,0 +1,14 @@
+release/catalogo.o
+release/main.o
+release/mainwindow.o
+release/productodialog.o
+release/recomendacion.o
+release/registro_usuario.o
+release/usuario.o
+release/utilidades.o
+release/ventana_productos.o
+release/qrc_Recursos.o
+release/moc_mainwindow.o
+release/moc_productodialog.o
+release/moc_registro_usuario.o
+release/moc_ventana_productos.o
